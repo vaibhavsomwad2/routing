@@ -1,0 +1,13 @@
+<div class="form-group">
+    <label for="pName">Prdouct Name</label>
+    <input type="text" class="form-control" id="pName" [value]="productObj?.pName"> 
+</div>
+<div class="form-group">
+    <label for="pStatus">product Status</label>
+    <select id="pStatus" class="form-control" [value]="productObj?.pStatus">
+        <option value="In Progress">In Progress</option>
+        <option value="Disptched">Disptched</option>
+        <option value="Delivered">Delivered</option>
+    </select>
+</div>
+<button class="btn btn-primary">Update Product</button>
