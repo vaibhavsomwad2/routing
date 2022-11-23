@@ -14,11 +14,10 @@ export class EditProductComponent implements OnInit {
   constructor(private productsServices:ProductsService, private route :ActivatedRoute) { }
 
   ngOnInit(): void {
-    
-    // this.pId = +this.route.snapshot.params['id']
-    this.route.params.subscribe((myParams:Params)=>{
+        // this.pId = +this.route.snapshot.params['id']
+      this.route.params.subscribe((myParams:Params)=>{
       this.pId = +myParams['id']
-    this.productObj = this.productsServices.getProducts(this.pId)
+      this.productObj = this.productsServices.getProducts(this.pId)
     })
   }
 

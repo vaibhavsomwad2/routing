@@ -9,17 +9,20 @@ productsArray:Iproducts[]=[
   {
     pId:1,
     pName:'Samsung',
-    pStatus: 'In Progress'
+    pStatus: 'In Progress',
+    pCanEdit:1
   },
   {
     pId:2,
     pName:'Nokia',
-    pStatus: 'Disptched'
+    pStatus: 'Disptched',
+    pCanEdit:1
   },
   {
     pId:3,
     pName:'Iphone',
-    pStatus: 'Delivered'
+    pStatus: 'Delivered',
+    pCanEdit:0
   }
 ]
   constructor() { }

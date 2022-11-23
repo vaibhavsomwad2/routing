@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { ActivatedRoute, Params } from '@angular/router';
 import { Iproducts } from '../shared/model/products';
 import { ProductsService } from '../shared/services/products.service';
 
@@ -9,7 +10,8 @@ import { ProductsService } from '../shared/services/products.service';
 })
 export class ProductsComponent implements OnInit {
 productArray:Iproducts[] =[];
-  constructor(private productsService:ProductsService) { }
+ActiveId:number = 1;
+  constructor(private productsService:ProductsService, private route:ActivatedRoute) { }
 
   ngOnInit(): void {
     this.productArray = this.productsService.getAllProducts()

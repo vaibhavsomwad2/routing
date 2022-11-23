@@ -9,6 +9,7 @@ import { UsersService } from '../shared/services/users.service';
 })
 export class UsersComponent implements OnInit {
   usersArray:Iusers[] = []
+  ActiveId:number = 1;
   constructor(private usersService:UsersService) { }
 
   ngOnInit(): void {
